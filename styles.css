@@ -40,11 +40,14 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    background-image: url(/layout-01-assets/img11.jpg);
+    background-image: url(/images/Banner.png);
     background-size: cover;
     padding-top: 6.5%;
     padding-bottom: 10%;
     width: 100%;
+    border-bottom: 5px #3f097e solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .banner>h3,
@@ -58,6 +61,101 @@
     font-size: 80px;
     text-shadow: 3px 3px black;
 }
+
+.newestInfo {
+    padding-top: 3%;
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3%;
+    justify-content: space-evenly;
+}
+
+
+.post {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 70%;
+    background-color: rgba(118, 49, 150, 0.61);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.post>img {
+    size: cover;
+}
+
+.post>p {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-self: flex-start;
+    margin-top: 9%;
+    margin-left: -22%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+    font-size: 19px;
+    color:#fff;
+}
+
+.post>h3 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-self: flex-start;
+    padding-left: 9%;
+    padding-right: 10%;
+    margin-top: 1.2%;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+#toAboutMe {
+    display: inline-block;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-self: flex-end;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+#toAboutMe span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+#toAboutMe span:hover {
+    padding-right: 12px;
+    margin-left:-19%;
+}
+
+#toAboutMe span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#toAboutMe:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 .headlineBoxesRow {
     padding-top: 3%;
@@ -97,8 +195,8 @@
     padding-left: 6%;
 }
 
-#greenHead {
-    color: rgb(0, 138, 0);
+#postHeader {
+    color: rgb(255, 159, 242);
 }
 
 #blueHead {
@@ -179,6 +277,10 @@
     padding: 2% 2%;
     margin-bottom: 5%;
     border-radius: 5px;
+}
+
+footer {
+    color: #3f097e;
 }
 
 
