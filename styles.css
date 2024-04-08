@@ -29,6 +29,12 @@
     cursor: pointer;
 }
 
+
+.navbutton:active {
+    background: #21242b;
+    cursor: pointer;
+}
+
 .banner {
     display: flex;
     flex-flow: column wrap;
@@ -186,6 +192,8 @@
     background-color: #000;
     animation: sky infinite linear alternate;
     z-index: -1;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .star {
@@ -194,84 +202,6 @@
     height: 0.1875rem;
     border-radius: 50%;
     background-color: #fff;
+    opacity: 0.2;
     z-index: -1;
-}
-
-.star--type-0{
-    animation: 
-    star-0 5s infinite ease alternate,
-    opacity 2s infinite linear alternate,
-    color 30s infinite ease alternate;
-}
-.star--type-1{
-    animation: 
-    star-1 8s infinite ease alternate-reverse,
-    opacity 2s infinite linear alternate-reverse,
-    color 30s infinite ease alternate-reverse;
-}
-.star--type-2{
-    animation: 
-    star-2 12s infinite ease alternate,
-    opacity 4s infinite linear alternate,
-    color 20s infinite ease alternate;
-}
-
-@keyframes star-0 {
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(0.8);
-    }
-}
-@keyframes star-1 {
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(0.2);
-    }
-}
-@keyframes star-2 {
-    0%{
-        transform: scale(0.5);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-@keyframes color {
-    0%{
-        background-color: #fff;
-    }
-    25%{
-        background-color: #f8baba;
-    }
-    50%{
-        background-color: #f0fabd;
-    }
-    75%{
-        background-color: #c7cffa;
-    }
-}
-
-@keyframes opacity {
-    0%{
-        opacity: .5;
-    }
-    80%{
-        opacity: 0.9;
-    }
-    100%{
-        opacity: 0.5;
-    }
-}
-
-@keyframes sky {
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(3);
-    }
 }
