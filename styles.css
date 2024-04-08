@@ -12,6 +12,7 @@
 }
 
 .navbutton {
+    text-decoration: none;
     height: 3vh;
     margin-left: 2%;
     margin-right: 2%;
@@ -25,12 +26,14 @@
 }
 
 .navbutton:hover {
+    text-decoration: none;
     background: #49505f;
     cursor: pointer;
 }
 
 
 .navbutton:active {
+    text-decoration: none;
     background: #21242b;
     cursor: pointer;
 }

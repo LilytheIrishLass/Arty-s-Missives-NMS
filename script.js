@@ -1,5 +1,9 @@
 "use strict"
 
+function changePage(page){
+        location.href = page;
+}
+
 const SKY = document.querySelector(`[data-sky]`);
 const QUANTITY = SKY.dataset.sky ? +SKY.dataset.sky : 40;
 
