@@ -1,0 +1,277 @@
+* {
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+    background: rgb(56, 62, 76);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 5vh;
+}
+
+.navbutton {
+    height: 3vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    background: rgb(56, 62, 76);
+    color: white;
+    padding: 0px 12px;
+    border-color: white;
+    border-style: groove;
+}
+
+.navbutton:hover {
+    background: #49505f;
+    cursor: pointer;
+}
+
+.banner {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/layout-01-assets/img11.jpg);
+    background-size: cover;
+    padding-top: 6.5%;
+    padding-bottom: 10%;
+    width: 100%;
+}
+
+.banner>h3,
+.banner>h1 {
+    color: white;
+    font-size: x-large;
+    text-shadow: 1px 1px black;
+}
+
+.banner>h1 {
+    font-size: 80px;
+    text-shadow: 3px 3px black;
+}
+
+.headlineBoxesRow {
+    padding-top: 3%;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3%;
+    justify-content: space-evenly;
+}
+
+.headlineBox {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-self: center;
+    width: 25%;
+    background-color: rgba(118, 49, 150, 0.61);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.headlineBox>p {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-self: flex-start;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 6%;
+}
+
+.headlineBox>h3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-self: flex-start;
+    padding-left: 6%;
+}
+
+#greenHead {
+    color: rgb(0, 138, 0);
+}
+
+#blueHead {
+    color: rgb(52, 105, 212);
+}
+
+#redHead {
+    color: rgb(138, 0, 0);
+}
+
+.headlineBox>.headlineButton {
+    width: 50%;
+    padding: 3% 3%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+
+#green {
+    margin-left: 25%;
+    background-color: rgb(0, 138, 0);
+    border-color: rgb(0, 138, 0);
+    color: white;
+    font-size: large;
+    box-shadow: none;
+    text-decoration: none;
+    border-style: solid;
+}
+
+#red {
+    margin-left: 25%;
+    background-color: rgb(138, 0, 0);
+    border-color: rgb(138, 0, 0);
+    color: white;
+    font-size: large;
+    box-shadow: none;
+    text-decoration: none;
+    border-style: solid;
+}
+
+#blue {
+    margin-left: 25%;
+    background-color: rgb(52, 105, 212);
+    border-color: rgb(52, 105, 212);
+    color: white;
+    font-size: large;
+    box-shadow: none;
+    text-decoration: none;
+    border-style: solid;
+}
+
+.columnBoxes {
+    margin-top: -8%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 8% 8%;
+    padding-bottom: 3%;
+    justify-content: space-evenly;
+}
+
+.columnBoxes>.columnBox {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-self: center;
+    width: 45%;
+    padding-bottom: 5%;
+    background-color: rgba(118, 49, 150, 0.61);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.columnBox>p {
+    padding: 3% 3%;
+}
+
+.columnsButton {
+    margin-left: 50%;
+    width: 30%;
+    padding: 2% 2%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+
+
+/* ------------------------------------ */
+.sky {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    animation: sky infinite linear alternate;
+    z-index: -1;
+}
+
+.star {
+    will-change: transform;
+    width: 0.1875rem;
+    height: 0.1875rem;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.star--type-0{
+    animation: 
+    star-0 5s infinite ease alternate,
+    opacity 2s infinite linear alternate,
+    color 30s infinite ease alternate;
+}
+.star--type-1{
+    animation: 
+    star-1 8s infinite ease alternate-reverse,
+    opacity 2s infinite linear alternate-reverse,
+    color 30s infinite ease alternate-reverse;
+}
+.star--type-2{
+    animation: 
+    star-2 12s infinite ease alternate,
+    opacity 4s infinite linear alternate,
+    color 20s infinite ease alternate;
+}
+
+@keyframes star-0 {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+@keyframes star-1 {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.2);
+    }
+}
+@keyframes star-2 {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes color {
+    0%{
+        background-color: #fff;
+    }
+    25%{
+        background-color: #f8baba;
+    }
+    50%{
+        background-color: #f0fabd;
+    }
+    75%{
+        background-color: #c7cffa;
+    }
+}
+
+@keyframes opacity {
+    0%{
+        opacity: .5;
+    }
+    80%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+@keyframes sky {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(3);
+    }
+}
