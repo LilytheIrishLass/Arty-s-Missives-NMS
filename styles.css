@@ -23,6 +23,7 @@
     padding: 0px 12px;
     border-color: white;
     border-style: groove;
+    font-size: .8em;
 }
 
 .navbutton:hover {
@@ -54,7 +55,7 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-image: url(/images/Banner.png);
     background-size: cover;
     padding-top: 6.5%;
@@ -68,12 +69,17 @@
 .banner>h3,
 .banner>h1 {
     color: white;
-    font-size: x-large;
+    text-align: center;
     text-shadow: 1px 1px black;
 }
 
+.banner>h3 {
+    font-size: x-large;
+}
+
 .banner>h1 {
-    font-size: 80px;
+    display: flex;
+    font-size: 3.6em;
     text-shadow: 3px 3px black;
 }
 
@@ -102,7 +108,7 @@
 }
 
 #contentStuff>h2 {
-    font-size: 36px;
+    font-size: 2em;
 }
 
 #contentStuff>h2,p {
@@ -112,7 +118,7 @@
 
 .post {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: space-between;
     align-self: center;
     width: 70%;
@@ -120,33 +126,58 @@
     font-family: "JetBrains Mono", monospace;
 }
 
-.post>img {
-    size: cover;
-}
-
-.post>p {
+.row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    align-self: flex-start;
-    margin-top: 9%;
-    margin-left: -22%;
+    align-items: center; /* Center items vertically */
+}
+
+.row > img {
+    max-width: 20%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add spacing between image and text */
+    margin-top: 20px;
+    margin-left:20px;
+}
+
+.row > .text-container {
+    flex-grow: 1; /* Let the text container grow to fill available space */
+}
+
+.row > p {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+    align-items: center;
     padding-right: 3%;
     padding-bottom: 1%;
     font-size: 19px;
-    color:#fff;
+    color: #fff;
 }
 
-.post>h3 {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-self: flex-start;
-    padding-left: 9%;
-    padding-right: 10%;
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .post {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .row {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .row > img {
+        margin: 10px auto; /* Center the image on smaller screens */
+    }
+}
+
+
+.row>h3 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 2%;
     margin-top: 1.2%;
-    font-size: 30px;
-    white-space: normal;
+    font-size: 2em;
+
 }
 
 #toAboutMe {
@@ -160,6 +191,7 @@
     color: #FFFFFF;
     text-align: center;
     padding: 10px;
+    margin-left: 5px;
     width: 25%;
     transition: all 0.5s;
     cursor: pointer;
