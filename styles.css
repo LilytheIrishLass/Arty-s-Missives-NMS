@@ -217,7 +217,7 @@ p {
 
 }
 
-#toAboutMe {
+.toAboutMe {
     display: inline-block;
     flex-flow: row;
     justify-content: flex-end;
@@ -236,7 +236,7 @@ p {
     margin-bottom: 1%;
 }
 
-#toAboutMe span {
+.toAboutMe span {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -244,12 +244,12 @@ p {
 }
 
 
-#toAboutMe span:hover {
+.toAboutMe span:hover {
     padding-right: 12px;
     margin-left: -19%;
 }
 
-#toAboutMe span::after {
+.toAboutMe span::after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -258,7 +258,7 @@ p {
     transition: 0.5s;
 }
 
-#toAboutMe:hover span:after {
+.toAboutMe:hover span:after {
     opacity: 1;
     right: 0;
 }
