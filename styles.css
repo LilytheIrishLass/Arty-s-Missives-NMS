@@ -107,6 +107,26 @@
     font-family: "JetBrains Mono", monospace;
 }
 
+.contactWrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-self: flex-start;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 5px;
+    width: 70%;
+    color: #fff;
+    background-color: rgba(118, 49, 150, 0.61);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.contactStuff>h3 {
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
 #contentStuff>h2 {
     font-size: 2em;
 }
@@ -249,6 +269,10 @@ th {
     border: 1px solid #1f0527;
     text-align: left;
     padding: 8px;
+}
+
+#friendCode {
+    color: rgb(253, 255, 230);
 }
 
 tr:nth-child(even) {
