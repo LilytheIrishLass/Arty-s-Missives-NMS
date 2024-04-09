@@ -47,6 +47,14 @@
     border-style: solid;
 }
 
+#journeylog1Img1 {
+    margin-left: 3%;
+    width: 35%;
+    border: 2px;
+    border-color: #3f097e;
+    border-style: solid;  
+}
+
 #avLabl {
     margin-left: 3%;
 }
