@@ -158,6 +158,22 @@
     font-family: "JetBrains Mono", monospace;
 }
 
+.feedWrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-self: center;
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    width: 70%;
+    color: #fff;
+    background-color: rgba(166, 52, 219, 0.61);
+    font-family: "JetBrains Mono", monospace;
+}
+
 .contactWrapper {
     display: flex;
     flex-flow: column wrap;
@@ -173,6 +189,26 @@
     font-family: "JetBrains Mono", monospace;
 }
 
+.feedPost {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-self: flex-start;
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 5px;
+    width: 70%;
+    color: #fff;
+    background-color: rgba(118, 49, 150, 0.61);
+    font-family: "JetBrains Mono", monospace;
+}
+
+
+.feedContent::before {
+    content: "Art3mis: ";
+}
+
 .contactStuff>h3 {
     margin-left: 20px;
     font-size: 1.5em;
@@ -184,6 +220,15 @@
 
 #contentStuff>h2,
 p {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+#feedStuff>h2 {
+    font-size: 2em;
+}
+
+#feedStuff>p {
     margin-left: 6%;
     margin-right: 6%;
 }
