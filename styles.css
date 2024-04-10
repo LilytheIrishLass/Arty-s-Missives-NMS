@@ -49,7 +49,36 @@
 
 #journeylog1Img1 {
     margin-left: 3%;
-    width: 35%;
+    width: 65%;
+    border: 2px;
+    border-color: #3f097e;
+    border-style: solid;  
+}
+
+#vonnieshipstation {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border: 2px;
+    border-color: #3f097e;
+    border-style: solid; 
+}
+
+#vonnieshiplush {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border: 2px;
+    border-color: #3f097e;
+    border-style: solid;  
+}
+
+#vonniestation {
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+    align-self: center;
+    width: 70%;
     border: 2px;
     border-color: #3f097e;
     border-style: solid;  
@@ -57,6 +86,20 @@
 
 #avLabl {
     margin-left: 3%;
+    font-size: small;
+}
+
+#shipLabel1 {
+    margin-left: 10%;
+    font-size: small;
+}
+
+#shipLabel2 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: small;
 }
 
 .banner {
@@ -100,7 +143,6 @@
     padding-bottom: 3%;
     justify-content: space-evenly;
 }
-
 .contentWrapper {
     display: flex;
     flex-flow: row;
@@ -109,6 +151,7 @@
     margin-top: 1%;
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 3%;
     width: 70%;
     color: #fff;
     background-color: rgba(118, 49, 150, 0.61);
@@ -153,6 +196,24 @@ p {
     width: 70%;
     background-color: rgba(118, 49, 150, 0.61);
     font-family: "JetBrains Mono", monospace;
+    transition: transform .2s; /* Animation */
+}
+
+
+.post:hover, #post3:hover {
+    transform: scale(1.008); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+#post3 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-self: center;
+    width: 70%;
+    background-color: rgba(118, 49, 150, 0.61);
+    font-family: "JetBrains Mono", monospace;
+    transition: transform .2s; /* Animation */
 }
 
 .row {
@@ -180,7 +241,7 @@ p {
 
 .row>p {
     display: flex;
-    flex-flow: row-reverse;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     padding-right: 3%;
