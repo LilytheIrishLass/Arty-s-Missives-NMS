@@ -84,6 +84,15 @@
     border-style: solid;  
 }
 
+#theTraveler {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border: 2px;
+    border-color: #091e7e;
+    border-style: solid;  
+}
+
 #avLabl {
     margin-left: 3%;
     font-size: small;
@@ -202,6 +211,10 @@
     color: #fff;
     background-color: rgba(118, 49, 150, 0.61);
     font-family: "JetBrains Mono", monospace;
+}
+
+.travelerLog3 {
+    color: rgb(252, 218, 175);
 }
 
 
