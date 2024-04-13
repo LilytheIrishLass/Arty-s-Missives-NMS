@@ -4,6 +4,15 @@ function changePage(page){
         location.href = page;
 }
 
+document.addEventListener("DOMContentLoaded", chooseRandom);
+
+function chooseRandom() {
+    let chance = Math.floor(Math.random() * 11);
+    if (chance === 5) {
+        document.getElementById("riddle").hidden = false;
+    }
+}
+
 const SKY = document.querySelector(`[data-sky]`);
 const QUANTITY = SKY.dataset.sky ? +SKY.dataset.sky : 40;
 

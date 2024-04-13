@@ -52,7 +52,7 @@
     width: 65%;
     border: 2px;
     border-color: #3f097e;
-    border-style: solid;  
+    border-style: solid;
 }
 
 #vonnieshipstation {
@@ -61,7 +61,7 @@
     width: 80%;
     border: 2px;
     border-color: #3f097e;
-    border-style: solid; 
+    border-style: solid;
 }
 
 #vonnieshiplush {
@@ -70,7 +70,7 @@
     width: 80%;
     border: 2px;
     border-color: #3f097e;
-    border-style: solid;  
+    border-style: solid;
 }
 
 #vonniestation {
@@ -81,16 +81,68 @@
     width: 70%;
     border: 2px;
     border-color: #3f097e;
-    border-style: solid;  
+    border-style: solid;
 }
 
-#theTraveler {
+.postPic {
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
     border: 2px;
     border-color: #091e7e;
-    border-style: solid;  
+    border-style: solid;
+}
+
+#worksPic {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-image: url(/images/bigplanet.png);
+    background-size: cover;
+    padding-bottom: 30%;
+    border-top: 5px #3f097e solid;
+    border-bottom: 5px #3f097e solid;
+}
+
+#contentWrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-self: center;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    width: 80%;
+    color: #fff;
+    background-color: rgba(118, 49, 150, 0.61);
+    font-family: "JetBrains Mono", monospace;
+}
+
+#announceP {
+    text-align: center;
+}
+
+#riddle {
+    text-align: center;
+}
+
+#redSpan {
+    color: #ffe4dc;
+}
+
+#greenSpan {
+    color: #d8ffda;
+}
+
+#blueSpan {
+    color: rgb(223, 236, 255);
+}
+
+#purpleSpan {
+    color: #39004b;
 }
 
 #avLabl {
@@ -133,8 +185,25 @@
     text-shadow: 1px 1px black;
 }
 
+#worksPic>h3,
+#worksPic>h1 {
+    color: rgb(255, 255, 240);
+    text-align: center;
+    text-shadow: 1px 1px rgb(22, 11, 24);
+}
+
+
 .banner>h3 {
     font-size: x-large;
+}
+
+#worksPic>h3 {
+    font-size: x-large;
+}
+
+#worksPic>h1 {
+    display: flex;
+    font-size: 3.5em;
 }
 
 .banner>h1 {
@@ -152,6 +221,7 @@
     padding-bottom: 3%;
     justify-content: space-evenly;
 }
+
 .contentWrapper {
     display: flex;
     flex-flow: row;
@@ -254,12 +324,15 @@ p {
     width: 70%;
     background-color: rgba(118, 49, 150, 0.61);
     font-family: "JetBrains Mono", monospace;
-    transition: transform .2s; /* Animation */
+    transition: transform .2s;
+    /* Animation */
 }
 
 
-.post:hover, #post3:hover {
-    transform: scale(1.008); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.post:hover,
+#post3:hover {
+    transform: scale(1.008);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
@@ -271,7 +344,8 @@ p {
     width: 70%;
     background-color: rgba(118, 49, 150, 0.61);
     font-family: "JetBrains Mono", monospace;
-    transition: transform .2s; /* Animation */
+    transition: transform .2s;
+    /* Animation */
 }
 
 .row {
