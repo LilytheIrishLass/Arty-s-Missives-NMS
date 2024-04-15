@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arty's Missions - Research</title>
+    <link rel="Stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="sky" data-sky></div>
+    <script src="script.js"></script>
+
+    <nav>
+        <section class="navbar">
+            <button class="navbutton" onclick="changePage(`index.html`)">Homepage</button>
+            <button class="navbutton" onclick="changePage(`aboutme.html`)">About Me</button>
+            <button class="navbutton" onclick="changePage(`journal.html`)">Journal</button>
+            <button class="navbutton" onclick="changePage(`research.html`)">Research</button>
+            <button class="navbutton" onclick="changePage(`feed.html`)">Feed</button>
+            <button class="navbutton" onclick="changePage(`contact.html`)">Contact</button>
+        </section>
+    </nav>
+
+    <section class="banner">
+        <h1>Arty's Missions</h1>
+    </section>
+
+    <section class="contentWrapper">
+        <section id="contentStuff">
+            <h2>Item ID: 0001 - <em>"Desolate Drift II"</em> <span class="accordion" id="log1Acc"
+                    onclick="openItem(`panel`,`log1Acc`)">></span></h2>
+            <section id="panel" hidden="true">
+                <!-- Dreadnought Freighter Capture -->
+                <table class="researchTable">
+                    <tr>
+                        <th>Type:</th>
+                        <td>Star System</td>
+                    </tr>
+                    <tr>
+                        <th>Stellar Class</th>
+                        <td>Red (K)</td>
+                    </tr>
+                    <tr>
+                        <th>Stellar Temp</th>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th>Oddities</th>
+                        <td>Unspecified (p)</td>
+                    </tr>
+                    <tr>
+                        <th>Economy</th>
+                        <td>Unavailable</td>
+                    </tr>
+                    <tr>
+                        <th>Conflict Level</th>
+                        <td>Unavailable (Under Investigation)</td>
+                    </tr>
+                    <tr>
+                        <th>Dominant Lifeform</th>
+                        <td>Unavailable</td>
+                    </tr>
+                    <tr>
+                        <th>Galactic Region</th>
+                        <td>Faylees Nebula</td>
+                    </tr>
+                    <tr>
+                        <th>Galaxy</th>
+                        <td>Euclid</td>
+                    </tr>
+                    <tr>
+                        <th>Extra</th>
+                        <td>Dissonant</td>
+                    </tr>
+                </table>
+
+                <section class="imageAndText">
+                    <img class="researchPic" src="images/drift_system.jpg">
+                    <p> <em>Desolate Drift II</em> is a system discovered by Traveler <em>"Totally_Bonkers"</em> on an
+                        unknown
+                        date.
+                        Personal reports and field studies have shown the system to be completely desolate of any
+                        higher-functioning
+                        entities. A large number of space freighter wrecks and abandoned hulls have been reported
+                        scattered
+                        between planetary bodies. Research into these wrecks is ongoing. Popular theory claims the
+                        system
+                        to be the site of an ancient battle. Current evidence and data does not dispute this theory.
+                    </p>
+                </section>
+                <br>
+                <label id="shipLabel1"><em>Image data courtesy of </em>OAS Parcival</label>
+                <br><br>
+                <p><em>Log Updated: Stardate 41/4::20024</em><br>Entry has not undergone any revisions as of Stardate
+                    41/4::20024</p>
+            </section>
+        </section>
+    </section>
+
+    <footer>
+        <p>Copyright 2024 Arty's Missions NMS</p>
+    </footer>
+
+
+</body>
+
+</html>

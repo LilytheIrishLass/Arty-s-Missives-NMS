@@ -7,8 +7,17 @@
     background: rgb(56, 62, 76);
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: row wrap;
     height: 5vh;
+}
+
+.imageAndText {
+    display: flex;
+    flex-flow: row;
+}
+
+.imageAndText>p {
+    width: 40%;
 }
 
 .navbutton {
@@ -88,6 +97,15 @@
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
+    border: 2px;
+    border-color: #091e7e;
+    border-style: solid;
+}
+
+.researchPic {
+    margin-left: 5%;
+    width: 50%;
+    height: 50%;
     border: 2px;
     border-color: #091e7e;
     border-style: solid;
@@ -407,7 +425,14 @@ p {
     padding-left: 2%;
     margin-top: 1.2%;
     font-size: 2em;
+}
 
+.accordion {
+    color: #f4511e;
+}
+
+.accordion:hover {
+    cursor: pointer;
 }
 
 .toAboutMe {
@@ -465,6 +490,15 @@ table {
     width: 90%;
 }
 
+.researchTable {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
 td,
 th {
     border: 1px solid #1f0527;
@@ -480,9 +514,12 @@ tr:nth-child(even) {
     background-color: #7a0099;
 }
 
+
 #specialOne {
     color: #960c05;
 }
+
+
 
 
 

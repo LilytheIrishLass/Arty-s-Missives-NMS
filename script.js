@@ -13,6 +13,17 @@ function chooseRandom() {
     }
 }
 
+
+function openItem(id,button) {
+    if (document.getElementById(id).hidden === true) {
+        document.getElementById(id).hidden = false;
+        document.getElementById(button).innerText = `v`;
+    } else {
+        document.getElementById(id).hidden = true;
+        document.getElementById(button).innerText = `>`;
+    }
+}
+
 const SKY = document.querySelector(`[data-sky]`);
 const QUANTITY = SKY.dataset.sky ? +SKY.dataset.sky : 40;
 
