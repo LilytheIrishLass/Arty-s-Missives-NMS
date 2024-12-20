@@ -65,3 +65,87 @@ if (SKY) {
         }
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Select the element with id "corrupt"
+    const corruptElement = document.getElementById('corrupt');
+  
+    // Split the text content into words
+    const words = corruptElement.textContent.split(' ');
+  
+    // Clear the content of the element
+    corruptElement.innerHTML = '';
+  
+    // Function to create the corrupt effect for each word
+    function createCorruptEffect(word) {
+      // Create a new span element for the word
+      const wordSpan = document.createElement('span');
+      wordSpan.textContent = word;
+      wordSpan.classList.add('corrupt-word');
+      wordSpan.setAttribute('data-text', word); // Use the word as the data-text
+  
+      return wordSpan;
+    }
+  
+    // Loop through each word and add the corrupt effect
+    words.forEach(word => {
+      const wordSpan = createCorruptEffect(word);
+      corruptElement.appendChild(wordSpan);
+      corruptElement.appendChild(document.createTextNode(' ')); // Add a space between words
+    });
+  });
+  
+
+// CSS (Add this in your stylesheet or within a <style> tag)
+const style = document.createElement('style');
+style.innerHTML = `
+  .corrupt-word {
+    display: inline-block;
+    position: relative;
+  }
+
+  .corrupt-word::before,
+  .corrupt-word::after {
+    content: attr(data-text);
+    position: absolute;
+    z-index: -1;
+  }
+
+  .corrupt-word::before {
+    top: -8px;
+    left: 15px;
+    color: #002064;
+  }
+
+  .corrupt-word::after {
+    top: -2px;
+    left: -10px;
+    color: #660000;
+  }
+  
+  @keyframes corrupt {
+    0% { content: "!@#"; }
+    5% { content: "16//16//16//16"; }
+    10% { content: "⊗⊕∂"; }
+    15% { content: "⧫⧿∇"; }
+    20% { content: "✖✴✳"; }
+    25% { content: "$%^"; }
+    30% { content: "☀☾☽"; }
+    35% { content: "561⚛⚔"; }
+    40% { content: "⨉⨁⨂"; }
+    45% { content: "∞≡≠"; }
+    50% { content: "&*("; }
+    55% { content: "⎋⌦⏚"; }
+    60% { content: "✂✉✎"; }
+    65% { content: "▒▓░"; }
+    70% { content: "𓀀𓂀𓃗"; }
+    75% { content: "_+-"; }
+    80% { content: "♠♥♣"; }
+    85% { content: "☁☂☄"; }
+    90% { content: "ϞϟϠ"; }
+    95% { content: "╳✕✖"; }
+    100% { content: "><|"; }
+  }
+`;
+
+document.head.appendChild(style);
