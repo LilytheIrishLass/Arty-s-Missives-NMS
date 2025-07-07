@@ -141,6 +141,24 @@
     margin-top: 2%;
 }
 
+#highightedImage {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-image: url(/images/mono_stare.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 60%;
+    margin-top: 2%;
+    border-radius: 1px;
+    color: #fff;
+    border-style:double;
+    border-color: rgb(95, 14, 149);
+    background-color: rgba(73, 4, 138, 0.71);
+}
+
 #contentWrapper {
     display: flex;
     flex-flow: row;
@@ -933,6 +951,10 @@ tr:nth-child(even) {
 
 #postHeader {
     color: rgb(255, 159, 242);
+}
+
+#postHeader2 {
+    color: rgb(255, 245, 159);
 }
 
 #blueHead {
