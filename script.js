@@ -67,36 +67,29 @@ if (SKY) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Select the element with id "corrupt"
     const corruptElement = document.getElementById('corrupt');
   
-    // Split the text content into words
     const words = corruptElement.textContent.split(' ');
   
-    // Clear the content of the element
     corruptElement.innerHTML = '';
   
-    // Function to create the corrupt effect for each word
     function createCorruptEffect(word) {
-      // Create a new span element for the word
       const wordSpan = document.createElement('span');
       wordSpan.textContent = word;
       wordSpan.classList.add('corrupt-word');
-      wordSpan.setAttribute('data-text', word); // Use the word as the data-text
+      wordSpan.setAttribute('data-text', word);
   
       return wordSpan;
     }
   
-    // Loop through each word and add the corrupt effect
     words.forEach(word => {
       const wordSpan = createCorruptEffect(word);
       corruptElement.appendChild(wordSpan);
-      corruptElement.appendChild(document.createTextNode(' ')); // Add a space between words
+      corruptElement.appendChild(document.createTextNode(' '));
     });
   });
   
 
-// CSS (Add this in your stylesheet or within a <style> tag)
 const style = document.createElement('style');
 style.innerHTML = `
   .corrupt-word {
